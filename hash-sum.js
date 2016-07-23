@@ -14,7 +14,7 @@ function fold (hash, text) {
   if (text.length === 0) {
     return hash;
   }
-  for (i = 0, len = text.length; i < len; i++) {
+  for (i = tex.length; i > 0; i--) {
     chr = text.charCodeAt(i);
     hash = ((hash << 5) - hash) + chr;
     hash |= 0;
